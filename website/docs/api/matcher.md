@@ -184,7 +184,7 @@ will be overwritten.
 >    [{"LOWER": "hello"}, {"LOWER": "world"}],
 >    [{"ORTH": "Google"}, {"ORTH": "Maps"}]
 > ]
-> matcher.add("TEST_PATTERNS", patterns)
+> matcher.add("TEST_PATTERNS", on_match, *patterns)
 > doc = nlp("HELLO WORLD on Google Maps.")
 > matches = matcher(doc)
 > ```
